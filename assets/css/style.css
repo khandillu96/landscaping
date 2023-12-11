@@ -412,6 +412,9 @@ h1 a { color: inherit; }
 
 .testimonial-slider li { margin: 0 0.7%; }
 .testimonial-slider .active { background-color: #fff; }
+/* testimonials start */
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -419,13 +422,44 @@ h1 a { color: inherit; }
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding: 36px 0;
+  background-color: #303030;
+  text-align: center;
+}
+
+.footer-icons { margin-bottom: 48px;}
+.footer-icons li {  margin: 0 1.7%; }
+
+.footer-icons li a {
+  padding: 10px;
+  background-color: #3f3f3f;
+  border-radius: 50px;
+  text-indent: -9999px;
+}
+
+.footer-icons li a::before {
+  font-family: "fontAwesome";
+  color: #69ad31;
+  float: left;
+  text-indent: 0;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.footer-icons li:nth-child(1) a::before { content: "\f082"; }
+.footer-icons li:nth-child(2) a::before { content: "\f099"; }
+.footer-icons li:nth-child(3) a::before { content: "\f0d5"; }
 
 
+footer p {
+  color: #575757;
+  font-size: 14px;
+  text-transform: capitalize;
+}
 
-
-
-
-
+footer p span { text-transform: lowercase; }
+footer p a { color: #6f6f6f; }
  /*=================================
   footer styling ends here
 =================================*/ 
