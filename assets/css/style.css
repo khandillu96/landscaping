@@ -118,7 +118,6 @@ h1 {
 
 h1 a { color: inherit; }
 
-
 #click { display: none; }
 .hamberger { text-indent: -9999px; }
 
@@ -155,9 +154,102 @@ h1 a { color: inherit; }
   main styling starts here
 =================================*/
 
+/* banner start */
+.banner {
+  padding: 306px 0 186px;
+  background-color: red;
+  background:linear-gradient(to bottom, rgba(30,72,34, 0.7) , rgba(19, 68, 16, 0.7)) , url('../image/img/intro-bg.jpg') no-repeat center left;
+  background-size: cover;
+  text-align: center;
+}
 
+.banner-title {
+  margin: 0 0 14px 0;
+  color: #fff;
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.banner-description {
+  margin: 0 25% 42px;
+  color: #dfe9db;
+  font-size: 21px;
+  line-height: 30px;
+}
 
+.banner a {
+   padding: 16px 2%;
+   border-radius: 6px;
+   background-color: #619f2d;
+   color: #fff;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   transition: all 0.3s;
+}
+/* banner end */
+
+/* landscaper start */
+.landscaper { padding: 110px 0; }
+
+.landscaper .wrapper, .landscaper-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.landscaper-details { flex-basis: 47.5%; }
+.landscaper-cards { flex-basis: 48.5%; }
+
+.landscaper-title,
+.landscaper-card figcaption {
+  margin-bottom: 60px;
+  position: relative;
+  color: #45505e;
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.landscaper-title span { color: #619f2d; }
+
+.landscaper-title::after {
+  content: '';
+  width: 14%;
+  border-top: 3px solid #6eab52;
+  position: absolute;
+  top: 54px;
+  left: 0;
+}
+
+.landscaper-details p,
+.landscaper-card p{
+  margin-bottom: 20px;
+  color: #7D7D94;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.view-all {
+  margin-top: 24px;
+  padding: 16px 4.3%;
+  border-radius: 5px;
+  background-color: #6eab52;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.landscaper-card { flex-basis: 47.35%; }
+
+.landscaper-card figcaption {
+  margin: 22px 0 28px 0;
+  font-size: 21px;
+}
+/* landscaper end */
 
 
 
