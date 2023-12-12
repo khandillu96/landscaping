@@ -159,7 +159,6 @@ h1 {
 }
 
 h1 a { color: inherit; }
-
 #click { display: none; }
 .hamberger { text-indent: -9999px; }
 
@@ -411,6 +410,7 @@ h1 a { color: inherit; }
   border-radius: 50%;
   background-color: #bfcdb4 ;
   text-indent: -9999px;
+  transition: all .3s;
 }
 
 .testimonial-slider li { margin: 0 0.7%; }
@@ -571,15 +571,35 @@ footer p {
 }
 
 footer p span { text-transform: lowercase; }
-footer p a { color: #6f6f6f; }
+footer p a { 
+  color: #6f6f6f;
+  transition: all .3s;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/* remove hover effet from mobile start*/
+@media only screen and (min-width: 1024px) {
+  .navbar li a:hover { color: #dfe9db; }
 
+  .banner a:hover,
+  .view-all:hover,
+  textarea + input:hover {
+   background-color: #fff;
+   color:#619f2d;
+  }
+  
+  .view-all:hover,
+  textarea + input:hover { border: 1px solid #619f2d; }
 
+  .project-navbar li:hover { background-color: #69ad31; cursor: pointer; }
+  .project-navbar li:hover   >  a { color :#dfe9db;}
+  .testimonial-slider a:hover { background-color: #fff; }
 
+  .footer-icons li a:hover::before,
+  footer p a:hover {
+    color: #dfe9db;
+  }
 }  
