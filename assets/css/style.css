@@ -99,7 +99,8 @@ li {
 
 .service-title,
 .project-title,
-.testimonials-title { 
+.testimonials-title,
+.contact-titel { 
   margin-bottom: 44px;
   color: #fff;
   position: relative;
@@ -112,7 +113,8 @@ li {
 
 .service-title::after,
 .project-title::after,
-.testimonials-title::after {
+.testimonials-title::after,
+.contact-titel::after {
   content: '';
   width: 6.2%;
   border-top: 3px solid #bfcdb4;
@@ -127,7 +129,8 @@ li {
 
 .service-title + p,
 .project-title + p,
-.testimonials-title + p {
+.testimonials-title + p,
+.contact-titel + p {
   font-size: 17px;
   margin-bottom: 90px;
   text-align: center;
@@ -414,6 +417,116 @@ h1 a { color: inherit; }
 .testimonial-slider .active { background-color: #fff; }
 /* testimonials start */
 
+/* contact us start */
+.contact { padding: 95px 0; }
+.contact-titel { color: #45505e; }
+.contact > .wrapper { width: 56%; }
+.contact-titel::after { border-top: 3px solid #69ad31; }
+
+.contact-titel + p {
+  margin-bottom: 78px;
+  color: #7d7d9f; 
+}
+
+.contact-lists {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-lists { 
+  flex-basis: 27%;
+  text-align: center;
+}
+
+.list-title,
+.contact-form-title {
+  margin-bottom: 34px;
+  color: #45505e;
+  position: relative;
+  font-size: 17px; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-title::after {
+   content: '';
+   width: 74px;
+   display: block;
+   position: absolute;
+   top: 29px;
+   left: 50%;
+   border-top: 3px solid #dddddd;
+   transform: translate(-50%);
+}
+
+.contact-list p {
+  margin-bottom: 10px;
+  color: #7D7D94;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.contact-form .wrapper { width: 58%; }
+
+.contact-form-title { 
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-inputs div { flex-basis: 47.4%; }
+.form-inputs div * { display: block; }
+
+.form-inputs div input ,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 5%;
+  border: 1.4px solid #dddddd;
+  border-radius: 2px;
+}
+
+.form-inputs div input::placeholder,
+textarea::placeholder {
+  color: #dddddd;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.error { 
+  display: inline-block; 
+  text-indent: -9999px; 
+}
+
+textarea {
+  padding: 12px 2.2%;
+  margin-bottom: 25px;
+  resize: none;
+}
+
+textarea + input {
+  margin: auto;
+  padding: 14px 2.5%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #69ad31;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+/* contact us end */
+
 
 /*=================================
   main styling ends here
@@ -450,7 +563,6 @@ footer {
 .footer-icons li:nth-child(1) a::before { content: "\f082"; }
 .footer-icons li:nth-child(2) a::before { content: "\f099"; }
 .footer-icons li:nth-child(3) a::before { content: "\f0d5"; }
-
 
 footer p {
   color: #575757;
