@@ -142,7 +142,8 @@ li {
 =================================*/
 header {
   padding: 29px 0;
-  background-color: #363636; 
+  position: relative;
+  background-color: #363636;
 }
 
 header .wrapper { 
@@ -371,10 +372,13 @@ h1 a { color: inherit; }
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
-.project-photo li { flex-basis: 31.33%; }
+.project-photo li { 
+  flex-basis: 31.33%;
+  margin-bottom: 30px;
+}
 /* project end */
 
 /* testimonials start */
@@ -435,7 +439,7 @@ h1 a { color: inherit; }
   flex-wrap: wrap;
 }
 
-.contact-lists { 
+.contact-list{ 
   flex-basis: 27%;
   text-align: center;
 }
@@ -579,6 +583,7 @@ footer p a {
   footer styling ends here
 =================================*/ 
 
+
 /*media query starts*/
 /* remove hover effet from mobile start*/
 @media only screen and (min-width: 1024px) {
@@ -602,4 +607,130 @@ footer p a {
   footer p a:hover {
     color: #dfe9db;
   }
-}  
+}
+
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .navbar { flex-basis: 70%; }
+  .navbar li { padding: 0 0 0 3%; }
+  .banner-description  { margin: 0 15% 42px; }
+  .project-photo li { flex-basis: 48%; }
+  .contact-lists li { margin-bottom: 40px;}
+}
+
+/*media query for 920px starts here*/
+@media only screen and (max-width: 920px) {
+  .landscaper-title::after {
+    width: 24%;
+    top: 80px;
+  }
+
+  .contact-list{ flex-basis: 33%; }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  /* header  */
+   .wrapper,.testimonials .wrapper,
+   .contact > .wrapper,
+   .contact-form .wrapper  { width: 90%; }
+   .hamberger::before { display: block; }
+   
+   .navbar {
+    width: 100%;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+  }
+
+  #click:checked ~ .navbar { display: block; }
+  #click:checked ~ .hamberger::before { content: "\f00d"; }
+  
+  .navbar li {
+    text-align: center;
+    margin: 30px 0;
+    display: block;
+  }
+  
+  /* main  */
+  .banner-title { font-size: 35px;}
+  .banner-description  { margin: 0 10% 42px; }
+   
+  .landscaper-title::after {
+    width: 14%;
+    top: 54px;
+  }
+
+  .view-all { margin: 10px 0 50px; }
+
+  .landscaper-details,
+  .landscaper-cards {
+    flex-basis: 100%;
+  }
+
+  .service-card { flex-basis: 47%; }
+  .service-card p,.contact-lists { margin-bottom: 30px; }
+  .service-card figcaption { margin: 14px 0 10px; }
+  /* .contact .wrapper */
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .banner { padding: 110px 0;}
+  .banner-title { font-size: 28px; }
+
+  .banner-description { 
+    margin: 0 2% 20px;
+    line-height: 25px;
+    font-size: 18px ;
+  }
+
+  .landscaper,
+  .service,
+  .testimonials { padding: 60px 0; }
+
+  .service-card {
+    margin-bottom: 15px; 
+    flex-basis: 100%;
+  }
+  
+  .service-title + p { margin-bottom: 40px; }
+  .project-photo li { flex-basis: 100%; }
+  .project-navbar li { margin: 0 1%  10px; }
+  .project { margin: 60px 0; }
+
+  .testimonials-title,
+  .contact-titel + p { margin-bottom: 40px; }
+  .contact-list{ flex-basis: 47%; }
+  .form-inputs { display: block; }
+  .contact { padding: 60px 0; }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+  .landscaper-card { flex-basis: 100%; }
+
+  .landscaper-card figcaption {
+    margin: 14px 0;
+    font-size: 21px;
+  }
+
+  .landscaper-title::after {
+    width: 24%;
+    top: 84px;
+  }
+
+  .landscaper-cards .landscaper-card:first-child p { margin-bottom: 50px; }
+
+  .project-navbar li { 
+    width: 70%;
+    display: block;
+  }
+
+  .contact-list{ flex-basis: 100%; }
+}
+
+
